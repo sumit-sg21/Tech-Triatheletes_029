@@ -4,9 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/card_carousel.css">
 </head>
 <body>
     <!-- Sushant's code -->
+     <div class="bg-gray-200 container-fluid">
+        <div class="flex items-center justify-center min-h-screen">
+            <div class="relative w-full max-w-[1165px]">
+                
+                <button id="prevButton" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-200 z-10">
+                    <svg class="h-6 w-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+    
+                
+                <div id="carousel" class="overflow-x-auto whitespace-nowrap hide-scrollbar scroll-smooth text-wrap text-center">
+                    <div class="inline-flex space-x-1">
+                        
+                        <div class="bg-white p-2 w-64">
+                            <img src="./assets/5.webp" alt="Dress 1" class="h-72 w-full object-contain overflow-hidden rounded">
+                            <h2 class="mt-4 text-lg font-semibold">ZIMMERMANN</h2>
+                            <p class="text-sm text-gray-500">Green And White Paisley Print High Neck Shirt</p>
+                            <p class="mt-2 text-gray-900">$500 to $783</p>
+                        </div>
+    
+                        
+    
+                        
+                        <div class="bg-white p-2 w-64">
+                            <img src="./assets/6.webp" alt="Dress 2" class="h-72 w-full object-contain overflow-hidden rounded">
+                            <h2 class="mt-4 text-lg font-semibold">TOTÊME</h2>
+                            <p class="text-sm text-gray-500">Striped Wool And Cotton-blend Turtleneck Sweater</p>
+                            <p class="mt-2 text-gray-900">$390 to $570</p>
+                        </div>
+    
+                        
+                        <div class="bg-white p-2 w-64">
+                            <img src="./assets/2.jpeg" alt="Dress 3" class="h-72 w-full object-contain overflow-hidden rounded">
+                            <h2 class="mt-4 text-lg font-semibold">ZIMMERMANN</h2>
+                            <p class="text-sm text-gray-500">Ottie Paisley Print Belted Linen Shorts</p>
+                            <p class="mt-2 text-red-600">$425 (36% OFF) to $662</p>
+                        </div>
+    
+                        <div class="bg-white p-2 w-64">
+                            <img src="./assets/10.webp" alt="Dress 2" class="h-72 w-full object-contain overflow-hidden rounded">
+                            <h2 class="mt-4 text-lg font-semibold">TOTÊME</h2>
+                            <p class="text-sm text-gray-500">STumbled Organic Cotton-silk Trench Coat In Sand</p>
+                            <p class="mt-2 text-gray-900">$992 to $1445</p>
+                        </div>
+
+                        <div class="bg-white p-2 w-64">
+                            <img src="./assets/9.webp" alt="Dress 4" class="h-72 w-full object-contain overflow-hidden rounded">
+                            <h2 class="mt-4 text-lg font-semibold">ZIMMERMANN</h2>
+                            <p class="text-sm text-gray-500">Ottie Paisley Long Sleeve Linen Midi Dress In Green Paisley</p>
+                            <p class="mt-2 text-red-600">$285 (50% OFF) to $570</p>
+                        </div>
+    
+                        
+                    </div>
+                </div>
+    
+                
+                <button id="nextButton" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-200 z-10">
+                    <svg class="h-6 w-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+     </div>
+    
+
+    <script>
+        const carousel = document.getElementById('carousel');
+        const nextButton = document.getElementById('nextButton');
+        const prevButton = document.getElementById('prevButton');
+
+        nextButton.addEventListener('click', () => {
+            carousel.scrollBy({
+                left: 300, 
+                behavior: 'smooth'
+            });
+        });
+
+        prevButton.addEventListener('click', () => {
+            carousel.scrollBy({
+                left: -300, 
+                behavior: 'smooth'
+            });
+        });
+    </script>
     <!-- Sushant's code end -->
 </body>
 </html>
