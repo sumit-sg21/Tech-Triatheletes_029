@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modesens Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-cream {
+      background-color: #f8f7ee;
+    }
+    .custom-search-input {
+      background-color: white;
+      width: 100%;
+      max-width: 700px;
+      padding: 12px;
+      border-radius: 10px 0 0 10px;
+      border: 1px solid #e0e0e0;
+      outline: none;
+      font-size: 16px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .custom-search-button {
+      padding: 12px 24px;
+      background-color: black;
+      color: white;
+      border-radius: 0 10px 10px 0;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .custom-search-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+    .right-section {
+      background-image: url('./20240808Rectangle.svg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-white flex items-center justify-center h-screen">
+
+  <div class="bg-cream flex w-10/12 h-3/4 bg-wheat shadow-md rounded-lg overflow-hidden">
+    <!-- Left Section -->
+    <div class="w-1/2 h-full p-10 flex flex-col justify-center">
+      <h1 class="text-6xl font-bold text-black leading-tight">
+        CHECK <span class="text-red-600">StyleVista</span><br>BEFORE YOU BUY
+      </h1>
+      <p class="mt-4 text-lg text-gray-900">We're not a store.<br>We're your smart personal shopper.</p>
+      
+      <!-- Search Bar -->
+      <div class="custom-search-container">
+        <input type="text" placeholder="🔍 gucci shoes" class="custom-search-input">
+        <button class="custom-search-button">SEARCH</button>
+      </div>
+    </div>
+
+    <!-- Right Section -->
+    <!-- <div class="w-1/2 h-full right-section flex justify-center items-center relative">
+      <img src="https://cdn.modesens.com/static/img/20240123topbanner_gif_en.gif" alt="Phone GIF" class="h-3/4 z-10">
+    </div> -->
+    <div class="w-1/2 h-full right-section flex justify-center items-center">
+      <img src="./20240123topbanner_gif_en.gif" alt="Phone GIF" class="max-w-full max-h-full">
+    </div>
+    
+  </div>
+
+</body>
+</html>
