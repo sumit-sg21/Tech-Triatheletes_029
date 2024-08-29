@@ -69,7 +69,7 @@ function addAnimation() {
 
 
 
-// ------------Created by vikram starts--------------
+
 
 const children = document.querySelectorAll(".five-itrate-product-category");
 const containerOfFiveProductCategoryTheirCon = document.getElementsByClassName(
