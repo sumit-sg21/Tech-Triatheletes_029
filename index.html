@@ -6,6 +6,7 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/card_carousel.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
@@ -13,14 +14,18 @@
   </head>
   <body>
     <!-- Sushant's code -->
-    <div class=" container-fluid">
+    <div class="container-fluid">
       <nav>
         <div
           class="cont mx-auto flex items-center justify-between py-2 px-4 md:px-8 lg:px-12"
         >
           <!-- Left Section (div1) -->
           <div class="div1 flex items-center space-x-4 md:space-x-8">
-            <img src="./assets/styleVista logo.jpg" alt="logo" class="w-20 md:w-32" />
+            <img
+              src="./assets/styleVista logo.jpg"
+              alt="logo"
+              class="w-20 md:w-32"
+            />
             <div class="hidden md:flex space-x-4 lg:space-x-8">
               <a href="#" class="text-black">WOMEN</a>
               <a href="#" class="text-black">MEN</a>
@@ -58,6 +63,49 @@
           </div>
         </div>
       </nav>
+
+      <!-- Right Section (div2) -->
+      <div class="bg-white flex items-center justify-center h-screen">
+        <div
+          class="bg-cream flex w-10/12 h-3/4 bg-wheat shadow-md rounded-lg overflow-hidden"
+        >
+          <!-- Left Section -->
+          <div class="w-1/2 h-full pt-5  pb-3 flex flex-col justify-center">
+            <h1 class="text-6xl font-bold text-black leading-tight">
+              CHECK <span class="text-red-600">StyleVista</span><br />BEFORE YOU
+              BUY
+            </h1>
+            <p class="mt-4 text-lg text-gray-900">
+              We're not a store.<br />We're your smart personal shopper.
+            </p>
+
+            <!-- Search Bar -->
+            <div class="custom-search-container">
+              <input
+                type="text"
+                placeholder="🔍 gucci shoes"
+                class="custom-search-input"
+              />
+              <button class="custom-search-button">SEARCH</button>
+            </div>
+          </div>
+
+          <!-- Right Section -->
+          <!-- <div class="w-1/2 h-full right-section flex justify-center items-center relative">
+            <img src="https://cdn.modesens.com/static/img/20240123topbanner_gif_en.gif" alt="Phone GIF" class="h-3/4 z-10">
+          </div> -->
+          <div
+            class="w-1/2 h-full right-section flex justify-center items-center"
+          >
+            <img
+              src="./assets/20240123topbanner_gif_en.gif"
+              alt="Phone GIF"
+              class="max-w-full max-h-full"
+            />
+          </div>
+        </div>
+      </div>
+
       <div class="flex items-center justify-center min-h-screen">
         <div class="relative w-full max-w-[1165px]">
           <button
