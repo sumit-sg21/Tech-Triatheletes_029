@@ -1,4 +1,3 @@
-
 let baseUrl = `https://traveling-ubiquitous-study.glitch.me`;
 
 let signupBtn = document.getElementById('signupSubmitBtn');
