@@ -21,8 +21,6 @@ const handleSignup = async (e) => {
         name: name.value,
         email: email.value,
         password: password.value,
-        phoneNo: phoneNo.value,
-        address: address.value,
         wishlist : [],
         cart : [],
         userOrder : []
