@@ -1,33 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Login & Signup Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-r from-white-500 to-indigo-600 flex items-center justify-center min-h-screen">
-    <div class="bg-white p-10 rounded-lg shadow-lg w-full max-w-md transform transition-all duration-500 hover:shadow-2xl">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Welcome</h2>
-        <p class="text-center text-gray-600 mb-8">Login to continue StyleVista</p>
-        
-        <form>
-            <div class="mb-6">
-                <label class="block text-sm font-medium text-gray-700 mb-2" for="email">Email:</label>
-                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="Enter your email" required>
+
+<body>
+    <div class="bg-gradient-to-r from-white-500 to-indigo-600 flex items-center justify-center min-h-screen p-4">
+        <div id="loginForm"
+        class="bg-white p-6 sm:p-8 md:p-10 rounded-lg shadow-lg w-full max-w-sm sm:max-w-md transform transition-all duration-500 hover:shadow-2xl">
+        <h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-4 sm:mb-6">Welcome</h2>
+        <p class="text-center text-gray-600 mb-6 sm:mb-8">Login to continue StyleVista</p>
+
+        <form onsubmit="handleLogin(event)">
+            <div class="mb-4 sm:mb-6">
+                <label class="block text-sm font-medium text-gray-700 mb-1 sm:mb-2" for="login-email">Email:</label>
+                <input type="email" id="login-email"
+                    class="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    placeholder="Enter your email" required>
             </div>
 
-            <div class="mb-8">
-                <label class="block text-sm font-medium text-gray-700 mb-2" for="password">Password:</label>
-                <input type="password" id="password" name="password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="Enter your password" required>
+            <div class="mb-6 sm:mb-8">
+                <label class="block text-sm font-medium text-gray-700 mb-1 sm:mb-2" for="login-password">Password:</label>
+                <input type="password" id="login-password"
+                    class="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    placeholder="Enter your password" required>
             </div>
 
-            <button type="submit" class="w-full py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-indigo-500">Submit</button>
+            <button type="submit"
+                class="w-full py-2 sm:py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-indigo-500">Submit</button>
         </form>
 
-        <p class="text-center mt-8 text-sm text-gray-600">
-            Don't Have an account? <a href="../signup/signup.html" class="text-indigo-600 font-semibold hover:underline">Sign Up</a>
+        <p class="text-center mt-6 sm:mt-8 text-sm text-gray-600">
+            Don't Have an account? <a href="#"
+                class="text-indigo-600 font-semibold hover:underline" onclick="toggleForms()">Sign Up</a>
         </p>
     </div>
+
+    <div id="signupForm"
+        class="bg-white p-6 sm:p-8 md:p-10 rounded-lg shadow-lg w-full max-w-sm sm:max-w-md transform transition-all duration-500 hover:shadow-2xl hidden">
+        <h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-4 sm:mb-6">Create Account</h2>
+        <p class="text-center text-gray-600 mb-6 sm:mb-8">Signup to join StyleVista</p>
+
+        <form onsubmit="handleSignup(event)">
+            <div class="mb-4 sm:mb-6">
+                <label class="block text-sm font-medium text-gray-700 mb-1 sm:mb-2" for="signup-email">Email:</label>
+                <input type="email" id="signup-email"
+                    class="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    placeholder="Enter your email" required>
+            </div>
+
+            <div class="mb-6 sm:mb-8">
+                <label class="block text-sm font-medium text-gray-700 mb-1 sm:mb-2" for="signup-password">Password:</label>
+                <input type="password" id="signup-password"
+                    class="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit"
+                class="w-full py-2 sm:py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-indigo-500">Sign Up</button>
+        </form>
+
+        <p class="text-center mt-6 sm:mt-8 text-sm text-gray-600">
+            Already have an account? <a href="#"
+                class="text-indigo-600 font-semibold hover:underline" onclick="toggleForms()">Login</a>
+        </p>
+    </div>
+    </div>
+
+    <script>
+        function toggleForms() {
+            const loginForm = document.getElementById('loginForm');
+            const signupForm = document.getElementById('signupForm');
+            loginForm.classList.toggle('hidden');
+            signupForm.classList.toggle('hidden');
+        }
+
+        function handleSignup(event) {
+            event.preventDefault();
+            const email = document.getElementById('signup-email').value;
+            const password = document.getElementById('signup-password').value;
+            localStorage.setItem(email, password);
+            alert('Signup successful! Please login.');
+            toggleForms();
+        }
+
+        function handleLogin(event) {
+        event.preventDefault();
+        const email = document.getElementById('login-email').value;
+        const password = document.getElementById('login-password').value;
+        const storedPassword = localStorage.getItem(email);
+        if (storedPassword && storedPassword === password) {
+            alert('Login successful! Welcome to StyleVista');
+            window.location.href = '../all product/allproduct.html'; 
+        } else {
+            alert('Invalid email or password. Please try again.');
+        }
+    }
+
+    </script>
 </body>
+
 </html>
