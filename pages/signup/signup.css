@@ -28,14 +28,7 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    width: 100%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    background-color: var(--text-color);
-    z-index: 2;
 
-}
 
 nav {
     display: flex;
@@ -156,7 +149,7 @@ main {
 }
 
 .signup-section {
-    width: 1200px;
+    width: 500px;
     margin: auto;
     /* border: 1px solid rgba(0, 0, 0, 0.332); */
     margin: 100px 0px;
@@ -186,20 +179,6 @@ form>div {
     gap: 5px;
 }
 
-form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-
-}
-
-form>div:nth-of-type(3) {
-    grid-row: span 2;
-}
-
-form>div:nth-of-type(6) {
-    grid-column: span 2;
-}
 
 label {
     font-size: clamp(0.8rem, 1.2vw, 1rem);
@@ -226,7 +205,7 @@ input[type="email"]:focus {
 
 input[type="submit"] {
     padding: 10px;
-    background-color: var(--bg-color);
+    background-color: cadetblue;
     border-radius: 5px;
     font-size: 1rem;
     font-family: "Questrial", sans-serif;
@@ -239,7 +218,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: var(--other-color);
+    background-color: rgb(156, 142, 243);
     color: var(--bg-color);
 }
 
@@ -261,92 +240,3 @@ textarea:focus {
 
 
 
-
-
-@media screen and (max-width: 1024px) {
-    nav {
-        width: 100%;
-    }
-
-    .logo-link .nav-links {
-        display: none;
-    }
-
-    .nav-button-image button:nth-of-type(1),
-    .nav-button-image button:nth-of-type(2),
-    .nav-button-image button:nth-of-type(3) {
-        display: none;
-    }
-
-    .nav-button-image button:nth-of-type(4) {
-        display: block;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-
-    nav {
-        width: 100%;
-    }
-
-    .logo-link .nav-links {
-        display: none;
-    }
-
-    .nav-button-image button:nth-of-type(1),
-    .nav-button-image button:nth-of-type(2),
-    .nav-button-image button:nth-of-type(3) {
-        display: none;
-    }
-
-    .nav-button-image button:nth-of-type(4) {
-        display: block;
-    }
-}
-
-@media screen and (max-width:412px) {
-
-    header {
-        width: 100%;
-    }
-
-    nav {
-        width: 100%;
-    }
-
-    .logo img {
-        width: 100px;
-    }
-
-    .logo-link .nav-links {
-        display: none;
-    }
-
-    .nav-button-image button:nth-of-type(1),
-    .nav-button-image button:nth-of-type(2),
-    .nav-button-image button:nth-of-type(3) {
-        display: none;
-    }
-
-    .nav-button-image button:nth-of-type(4) {
-        display: block;
-    }
-
-    form {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    form>div:nth-of-type(3) {
-        grid-row: span 1;
-    }
-
-    form>div:nth-of-type(6) {
-        grid-column: span 1;
-    }
-
-    .signup-section {
-        width: 100%;
-    }
-
-}

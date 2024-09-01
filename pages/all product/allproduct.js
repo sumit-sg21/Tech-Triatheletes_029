@@ -118,16 +118,7 @@ const ShowSearchData = (data) => {
     productElement.className = "product";
     productElement.style.cursor = "pointer";
 
-    productElement.addEventListener("click", () => {
-      window.location.href = `../productDescriptionPage/productDescriptionPage.html`;
-
-      if (!localStorage.getItem("singleProduct")) {
-        localStorage.removeItem("singleProduct");
-        localStorage.setItem("singleProduct", JSON.stringify(product));
-      } else {
-        localStorage.setItem("singleProduct", JSON.stringify(product));
-      }
-    });
+    
 
     const productImage = document.createElement("div");
     productImage.className = "product-image";
