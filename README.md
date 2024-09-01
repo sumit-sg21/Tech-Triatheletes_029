@@ -46,7 +46,7 @@ Tech-Triathletes_029/
           │         ├──styles.css
           │         └──script.js
           │                     
-          ├── orders/
+          ├── Wishlist/
           │         ├──index.html
           │         ├──styles.css
           │         └──script.js
