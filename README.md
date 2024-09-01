@@ -11,7 +11,7 @@ FRONTEND and BACKEND
 <br>
 
 ## Deployed App
-1.[StyleVista](https://github.com/sumit-sg21/Tech-Triathletes_029)
+1.[StyleVista](https://sumit-sg21.github.io/Tech-Triathletes_029/)
 
 
 <br>
