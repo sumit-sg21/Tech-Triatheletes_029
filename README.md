@@ -71,8 +71,4 @@ npx tailwindcss init
 
 ```
 
-#### VIATOURS
-```bash
-cd figma
-```
 
