@@ -51,6 +51,7 @@ header {
     position: fixed;
     background-color: var(--text-color);
     z-index: 2;
+    background-color: #ebc6c6;
 
 }
 
@@ -58,7 +59,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fff;
+    background-color: #ebc6c6;
     padding: 15px 20px;
     width: 1400px;
     margin: auto;
