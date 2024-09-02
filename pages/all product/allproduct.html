@@ -109,7 +109,17 @@
 
     <main class="products-section">
 
-        <div class="product-aside">
+        <div class="product-aside" style="background-color: rgb(61, 136, 136);">
+            <div>
+                <button id="backButton">Go Back</button>
+                <script>
+                    document.getElementById("backButton").addEventListener("click", function() {
+                    window.location.href = "../../index.html";
+                    });
+
+                </script>
+            </div>
+
             <div class="product-filter">
                 <h3>Filter By Category :</h3>
                 <select id="categoryWiseProduct">

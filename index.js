@@ -12,6 +12,9 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+
+
   
 
 function showSection(section) {

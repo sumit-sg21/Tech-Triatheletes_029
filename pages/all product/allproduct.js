@@ -13,21 +13,7 @@ let allProductArr = [kidurl, menurl, womenurl, homeurl, beautyurl];
 let userCart = document.getElementById("userCart");
 let userWishlist = document.getElementById("userWishlist");
 
-userCart.addEventListener("click", () => {
-  if (localStorage.getItem('isLoggedinUser')) {
-    window.location.href = "../cart/cart.html";
-  } else {
-    alert("Please login first");
-  }
-});
 
-userWishlist.addEventListener("click", () => {
-  if (localStorage.getItem('isLoggedinUser')) {
-    window.location.href = "../wishlist/wishlist.html";
-  } else {
-    alert("Please login first");
-  }
-});
 
 let loginRedirect = document.getElementById("loginRedirect");
 let logoutRedirect = document.getElementById("logoutRedirect");
