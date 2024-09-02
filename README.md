@@ -16,6 +16,12 @@ FRONTEND and BACKEND
 
 <br>
 
+## Project presentation
+1.[YouTube Link](https://youtu.be/dDr4AxBdXf8)
+
+
+<br>
+
 ## Directory Structure
 
 ```
@@ -41,20 +47,17 @@ Tech-Triathletes_029/
           │        └──script.js
           │
           │                      
-          ├── login/
+          ├── login (with SignUp)/
           │         ├──index.html
           │         ├──styles.css
           │         └──script.js
           │                     
           ├── Wishlist/
-          │         ├──index.html
-          │         ├──styles.css
-          │         └──script.js
-          │                             
-          ├── signup/
-                 ├──index.html
-                 ├──styles.css
-                 └──script.js
+                   ├──index.html
+                   ├──styles.css
+                   └──script.js
+                                       
+
                             
 
 
