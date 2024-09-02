@@ -2,7 +2,7 @@
 <br>
 
 ## Introduction
-StyleVista - A Dynamic Website made from Tailwind, HTML, CSS, and JavaScript.
+StyleVista - A Dynamic Clothing Vendor Website made from Tailwind, HTML, CSS, and JavaScript.
 
 <br>
 
@@ -18,6 +18,13 @@ FRONTEND and BACKEND
 
 ## Project presentation
 1.[YouTube Link](https://youtu.be/dDr4AxBdXf8)
+
+
+<br>
+
+## landing Page
+
+![Screenshot from 2024-09-02 15-45-48](https://github.com/user-attachments/assets/eca30643-ebf9-4495-97f5-f8cbce96bea6)
 
 
 <br>
